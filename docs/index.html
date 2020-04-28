@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Sample Markdown Page</title>
-
+    <title>MaGIC Train PI Design</title>
+    <link href="images/favicon.ico" rel="icon" type="image/ico" />
     <style>
       .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
@@ -201,7 +201,7 @@
       <script src="javascripts/all-c5541673.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;]">
+  <body class="index" data-languages="[]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -209,98 +209,848 @@
       </span>
     </a>
     <div class="toc-wrapper">
-      <img src="images/logo-1e815a84.png" class="logo" alt="Logo" />
-        <div class="lang-selector">
-              <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="ruby">ruby</a>
-              <a href="#" data-language-name="python">python</a>
-              <a href="#" data-language-name="javascript">javascript</a>
-        </div>
+      <img src="images/logo-e6965cda.png" class="logo" alt="Logo" />
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
         </div>
         <ul class="search-results"></ul>
       <ul id="toc" class="toc-list-h1">
           <li>
-            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+            <a href="#magic-train-pi-design-0-1-3" class="toc-h1 toc-link" data-title="MaGIC Train PI Design 0.1.3">MaGIC Train PI Design 0.1.3</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#history" class="toc-h2 toc-link" data-title="History">History</a>
+                  </li>
+              </ul>
           </li>
           <li>
-            <a href="#identity-host-changes" class="toc-h1 toc-link" data-title="Identity Host Changes">Identity Host Changes</a>
+            <a href="#pi6-features" class="toc-h1 toc-link" data-title="PI6 Features">PI6 Features</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#the-pi-6-will-incorporate-the-following-features" class="toc-h2 toc-link" data-title="The PI-6 will incorporate the following features:">The PI-6 will incorporate the following features:</a>
+                  </li>
+                  <li>
+                    <a href="#map-13-connection-of-digital-identity-to-mygov-account-via-mygov" class="toc-h2 toc-link" data-title="MAP 13 - Connection of Digital Identity to myGov Account via myGov">MAP 13 - Connection of Digital Identity to myGov Account via myGov</a>
+                  </li>
+                  <li>
+                    <a href="#map-16-complete-abandoned-mygov-integration-flow" class="toc-h2 toc-link" data-title="MAP 16 - Complete Abandoned myGov Integration Flow">MAP 16 - Complete Abandoned myGov Integration Flow</a>
+                  </li>
+                  <li>
+                    <a href="#map-20-identity-resolution" class="toc-h2 toc-link" data-title="MAP 20 - Identity Resolution">MAP 20 - Identity Resolution</a>
+                  </li>
+                  <li>
+                    <a href="#map-43-agency-customer-link-api" class="toc-h2 toc-link" data-title="MAP 43 - Agency Customer Link API">MAP 43 - Agency Customer Link API</a>
+                  </li>
+                  <li>
+                    <a href="#map-54-manage-consent-and-idp-selection" class="toc-h2 toc-link" data-title="MAP 54 - Manage Consent and IdP selection">MAP 54 - Manage Consent and IdP selection</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#pi7-features" class="toc-h1 toc-link" data-title="PI7 Features">PI7 Features</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#map-204-disposal-of-expired-member-service-messages-in-mygov-inbox-data-store" class="toc-h2 toc-link" data-title="MAP 204 - Disposal of expired member service messages in myGov inbox data store">MAP 204 - Disposal of expired member service messages in myGov inbox data store</a>
+                  </li>
+                  <li>
+                    <a href="#map-55-manage-idps-enrolled-in-private-beta-from-idps-enrolled-in-public-beta" class="toc-h2 toc-link" data-title="MAP 55 - Manage IdPs enrolled in private beta from IdPs enrolled in public beta">MAP 55 - Manage IdPs enrolled in private beta from IdPs enrolled in public beta</a>
+                  </li>
+                  <li>
+                    <a href="#map-210-expose-mygov-inbox-api-to-support-the-digital-experience-platform-dashboard" class="toc-h2 toc-link" data-title="MAP 210 - Expose myGov Inbox API to support the digital experience platform dashboard">MAP 210 - Expose myGov Inbox API to support the digital experience platform dashboard</a>
+                  </li>
+                  <li>
+                    <a href="#map-211-expose-mygov-tell-us-once-api-to-support-the-digital-experience-platform-dashboard" class="toc-h2 toc-link" data-title="MAP 211 - Expose myGov Tell us Once API to support the digital experience platform dashboard">MAP 211 - Expose myGov Tell us Once API to support the digital experience platform dashboard</a>
+                  </li>
+                  <li>
+                    <a href="#map-198-enhancements-to-mygov-integration-architecture-design" class="toc-h2 toc-link" data-title="MAP 198 - Enhancements to myGov Integration architecture design">MAP 198 - Enhancements to myGov Integration architecture design</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#pi8-features" class="toc-h1 toc-link" data-title="PI8 Features">PI8 Features</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#map-42-connect-digital-identity-to-mygov-via-an-authenticated-member-service-session" class="toc-h2 toc-link" data-title="MAP 42 - Connect digital identity to myGov via an authenticated member service session">MAP 42 - Connect digital identity to myGov via an authenticated member service session</a>
+                  </li>
+                  <li>
+                    <a href="#map-155-broadcast-capability-for-mygov-unauthenticated-pages" class="toc-h2 toc-link" data-title="MAP 155 - Broadcast capability for myGov unauthenticated pages">MAP 155 - Broadcast capability for myGov unauthenticated pages</a>
+                  </li>
+                  <li>
+                    <a href="#map-184-enhance-mobile-authentication-pattern-to-accept-digital-identity" class="toc-h2 toc-link" data-title="MAP 184 - Enhance mobile authentication pattern to accept digital identity">MAP 184 - Enhance mobile authentication pattern to accept digital identity</a>
+                  </li>
+                  <li>
+                    <a href="#map-185-enhance-web-authentication-pattern-to-accept-digital-identity" class="toc-h2 toc-link" data-title="MAP 185 - Enhance web authentication pattern to accept digital identity">MAP 185 - Enhance web authentication pattern to accept digital identity</a>
+                  </li>
+                  <li>
+                    <a href="#map-223-archiving-inactive-mygov-accounts" class="toc-h2 toc-link" data-title="MAP 223 - Archiving inactive myGov accounts">MAP 223 - Archiving inactive myGov accounts</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#references" class="toc-h1 toc-link" data-title="References">References</a>
           </li>
       </ul>
+        <ul class="toc-footer">
+            <li><a href='changelog.html'>Complete Change log</a></li>
+        </ul>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id='introduction'>Introduction</h1>
-<p>this is a sample page only</p>
-<h1 id='identity-host-changes'>Identity Host Changes</h1>
-<aside class="notice">
-This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
-</aside>
-
-<p>The Kittn API uses the following error codes:</p>
-
+        <h1 id='magic-train-pi-design-0-1-3'>MaGIC Train PI Design 0.1.3</h1>
+<p>This artifact will include the design (or references to documentation) for those features which require solution architecture involvement.</p>
+<h2 id='history'>History</h2>
 <table><thead>
 <tr>
-<th>Error Code</th>
-<th>Meaning</th>
+<th>Author</th>
+<th>Date</th>
+<th>Version</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>400</td>
-<td>Bad Request -- Your request is invalid.</td>
+<td>LP</td>
+<td>17/09/2019</td>
+<td>0.1.0</td>
+<td>Created</td>
 </tr>
 <tr>
-<td>401</td>
-<td>Unauthorized -- Your API key is wrong.</td>
+<td>RC</td>
+<td>18/10/2019</td>
+<td>0.1.1</td>
+<td>Updated - PI 6 Features</td>
 </tr>
 <tr>
-<td>403</td>
-<td>Forbidden -- The kitten requested is hidden for administrators only.</td>
+<td>MD</td>
+<td>16/01/2020</td>
+<td>0.1.2</td>
+<td>Updated - Added PI7 Features</td>
 </tr>
 <tr>
-<td>404</td>
-<td>Not Found -- The specified kitten could not be found.</td>
+<td>RC</td>
+<td>23/01/2020</td>
+<td>0.1.3</td>
+<td>Updated - Moved to different folders and files</td>
+</tr>
+</tbody></table>
+
+<aside class="info">
+This is a living document and thus subject to change.
+</aside>
+<h1 id='pi6-features'>PI6 Features</h1><h2 id='the-pi-6-will-incorporate-the-following-features'>The PI-6 will incorporate the following features:</br></h2>
+<table><thead>
+<tr>
+<th>Feature #</th>
+<th>Feature Description</th>
+<th>Design Required</th>
+<th>MDT</th>
+<th>Comments</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-9">MAP-9</a></td>
+<td>myGov On Boarding Environment</td>
+<td>No</td>
+<td>Magical Staff</td>
+<td>NONE</td>
 </tr>
 <tr>
-<td>405</td>
-<td>Method Not Allowed -- You tried to access a kitten with an invalid method.</td>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-13">MAP-13</a></td>
+<td>Connection of Digital Identity to myGov Account via myGov</td>
+<td><a href="#MAP13">Yes</a></td>
+<td>Dragons, Magical Staff</td>
+<td></td>
 </tr>
 <tr>
-<td>406</td>
-<td>Not Acceptable -- You requested a format that isn&#39;t json.</td>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-15">MAP-15</a></td>
+<td>myAged Care move to DoH</td>
+<td>No</td>
+<td>Magical Staff</td>
+<td>Carried forward from PI-5 (scheduled for Nov 23rd release)</td>
 </tr>
 <tr>
-<td>410</td>
-<td>Gone -- The kitten requested has been removed from our servers.</td>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-16">MAP-16</a></td>
+<td>Complete Abandoned myGov Integration Flow</td>
+<td><a href="#MAP16">Yes</a></td>
+<td>Dragons, Magical Staff</td>
+<td>Sequence diagrams have been attached to the respective user stories in JIRA <a href="http://jira-prod.csda.gov.au/browse/MI-181">MI-181</a>, <a href="http://jira-prod.csda.gov.au/browse/MI-182">MI-182</a>, <a href="http://jira-prod.csda.gov.au/browse/MI-183">MI-183</a></td>
 </tr>
 <tr>
-<td>418</td>
-<td>I&#39;m a teapot.</td>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-17">MAP-17</a></td>
+<td>myGov Access App Enhancements</td>
+<td>No</td>
+<td>Magical Staff</td>
+<td>NONE</td>
 </tr>
 <tr>
-<td>429</td>
-<td>Too Many Requests -- You&#39;re requesting too many kittens! Slow down!</td>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-20">MAP-20</a></td>
+<td>Identity Resolution in the Ecosystem</td>
+<td><a href="#MAP20">Yes</a></td>
+<td>Mushrooms</td>
+<td>NONE</td>
 </tr>
 <tr>
-<td>500</td>
-<td>Internal Server Error -- We had a problem with our server. Try again later.</td>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-22">MAP-22</a></td>
+<td>Improve Error Handling experience in myGov Integration Flow</td>
+<td>No</td>
+<td>Dragons</td>
+<td>NONE</td>
 </tr>
 <tr>
-<td>503</td>
-<td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-34">MAP-34</a></td>
+<td>Department of Health: Bonded Programs On-boarding to myGov</td>
+<td>No</td>
+<td>Magical Staff</td>
+<td>Inbox / NAC services are not in scope for the Nov 23rd release, however they might be in scope for the Feb 2020 release so we need to create and provide TEST/PROD .pfx certs accordingly</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-37">MAP-37</a></td>
+<td>ISAM DMZ Move</td>
+<td>No</td>
+<td>Magical Staff</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-40">MAP-40</a></td>
+<td>Turn on Inbox and Tell Us Once for VICSRO</td>
+<td>No</td>
+<td>Magical Staff</td>
+<td>Carried forward from PI-5  (scheduled for Nov 23rd release)</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-43">MAP-43</a></td>
+<td>myGov Linking Tool links to Process Direct</td>
+<td><a href="#MAP43">Yes</a></td>
+<td>Magical Staff</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-47">MAP-47</a></td>
+<td>Remove redundant logging to free up server space</td>
+<td>No</td>
+<td>Magical Staff</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-50">MAP-50</a></td>
+<td>Remove ConnectedID code</td>
+<td>No</td>
+<td>Magical Staff</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-51">MAP-51</a></td>
+<td>Log myGov user session attributes</td>
+<td>No</td>
+<td>Magical Staff</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-53">MAP-53</a></td>
+<td>Masking of Message ID header of emails sent from myGov</td>
+<td>No</td>
+<td>Magical Staff</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-54">MAP-54</a></td>
+<td>Exchange to forget user consent</td>
+<td><a href="#MAP54">Yes</a></td>
+<td>Dragons</td>
+<td>Stretch goal</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-62">MAP-62</a></td>
+<td>Provision Australia Post to the Exchange Production Environment</td>
+<td>No</td>
+<td>Mushrooms</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-65">MAP-65</a></td>
+<td>DHS AusKey Decommissioning</td>
+<td>No</td>
+<td>Magical Staff</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-67">MAP-67</a></td>
+<td>Extend logic in Exchange to evaluate assurance levels (acr_claim)</td>
+<td>No</td>
+<td>Dragons</td>
+<td>NONE</td>
+</tr>
+</tbody></table>
+<h2 id='map-13-connection-of-digital-identity-to-mygov-account-via-mygov'>MAP 13 - Connection of Digital Identity to myGov Account via myGov</h2>
+<p><a id="MAP13"></a>
+This feature enables the User to connect their myGov account to their Digital Identity from an authenticated myGov session, and also allow the user to sign-in to the myGov portal using their Digital Identity.</p>
+
+<ul>
+<li><p>Appropriate validation will be performed in the myGov code to ensure that connection to Digital Identity MUST only occur if the assurance level meets the minimum requirement of IP2 + CL2.</p></li>
+<li><p>Once the User successfully connects their myGov account to Digital Identity, the existing session in myGov is stepped-up from their myGov credential to Digital Identity credential upon the user returning to an authenticated myGov portal.</p></li>
+<li><p>Four new DB tables (specified below) will be created by the myGov Developers as part of this feature to ensure that the User’s Digital Identity information is stored in separate DB tables.</p>
+
+<ul>
+<li><strong>MGV_PROF_DIGITAL_IDENTITY</strong>  - This table stores profile information for an associated digital identity.</li>
+<li><strong>MGV_PROF_DIGITAL_IDENTITY_HIST</strong> – History of digital identity profile  entries – similar to  profile history table.</li>
+<li><strong>MGV_BANNER_REF</strong> -   This table stores information pertaining to types of banners and properties associated.</li>
+<li><strong>MGV_BANNER</strong> – This table stores user interaction with banner types.</li>
+</ul></li>
+<li><p>For Feb 2020 release (MVP), we need to ensure that even though a User has already connected their myGov account to their Digital Identity, their existing myGov Profile information MUST be used for the Tell-Us-Once and Linking services, NOT their Digital Identity profile details.</p></li>
+<li><p>The  following schema change is required to the existing <strong>RetrieveMyGovAgencyInfo</strong> service to add an optional Boolean attribute to determine the User’s Digital Identity connected status.
+The value of this attribute will be used to determine from which table the User’s profile information should be retrieved to be displayed on the User’s myGov home page. 
+If the Boolean is set to True then the profile information should be retrieved from the new <strong>MGV_PROF_DIGITAL_IDENTITY</strong> table, OR ELSE the existing myGov User Profile table.</p></li>
+</ul>
+
+<p>Click <a href="images/map-13/retrieve-agency-info-response-schema-change-4ef51b75.png">here</a> to view the diagram at full size.</p>
+
+<p>Click <a href="http://svn-alm-prod.csda.gov.au/svn/CSI/ServiceArtefacts/trunk/ESBRelease2/schema/mygov/authenticationhub/accountlink/messages/v20170513/mygov.authenticationhub.accountlink.messages.v20170513.xsd">here</a> for the modified Schema file in the SOAPE SVN Repository. </p>
+
+<p><img src="images/map-13/retrieve-agency-info-response-schema-change-4ef51b75.png" alt="myGov Retrieve Agency Info Response schema change" /></p>
+<h2 id='map-16-complete-abandoned-mygov-integration-flow'>MAP 16 - Complete Abandoned myGov Integration Flow</h2>
+<p><a id="MAP16"></a></p>
+
+<p>This feature allows a user, who had previously commenced the process of linking their digital identity to myGov and not completed to be able to return and complete the process.</p>
+
+<ul>
+<li><p>No SSO (myGov account not connected to Digital Identity) JIRA <a href="http://jira-prod.csda.gov.au/browse/MI-181">MI-181</a></p>
+
+<ul>
+<li>Scenario 1: (Existing myGov - No Exchange - No SSO)
+Click <a href="images/map-16/ExistingmyGov-NoExchange-NoSSO-aba75a42.png">here</a> to view the diagram at full size or get the PDF <a href="bin/map-16/ExistingmyGov-NoExchange-NoSSO.pdf">here</a></li>
+<li>Scenario 2: (No myGov - No Exchange - No SSO)
+Click <a href="images/map-16/NomyGov-NoExchange-NoSSO-a7cdc625.png">here</a> to view the diagram at full size or get the PDF <a href="bin/map-16/NomyGov-NoExchange-NoSSO.pdf">here</a></li>
+</ul></li>
+<li><p>No SSO (myGov account connected to Digital Identity) JIRA <a href="http://jira-prod.csda.gov.au/browse/MI-182">MI-182</a></p>
+
+<ul>
+<li>Scenario 1: (Existing myGov - Connected to Exchange - No SSO)
+Click <a href="images/map-16/ExistingmyGov-ConnectedtoExchange-NoSSO-b24d2230.png">here</a> to view the diagram at full size or get the PDF <a href="bin/map-16/ExistingmyGov-ConnectedtoExchange-NoSSO.pdf">here</a></li>
+</ul></li>
+<li><p>Active SSO session (mygov_linked claim) JIRA <a href="http://jira-prod.csda.gov.au/browse/MI-183">MI-183</a></p>
+
+<ul>
+<li>Scenario 1: (Existing myGov - No Exchange - SSO available)
+Click <a href="images/map-16/ExistingmyGov-NoExchange-SSOavailable-0d08812a.png">here</a> to view the diagram at full size or get the PDF <a href="bin/map-16/ExistingmyGov-NoExchange-SSOavailable.pdf">here</a></li>
+<li>Scenario 2: (No myGov - No Exchange - SSO available)
+Click <a href="images/map-16/NomyGov-NoExchange-SSOavailable-9eabe763.png">here</a> to view the diagram at full size or get the PDF <a href="bin/map-16/NomyGov-NoExchange-SSOavailable.pdf">here</a></li>
+<li>Scenario 3: (Existing myGov - Connected to Exchange - SSO available)
+Click <a href="images/map-16/ExistingmyGov-ConnectedtoExchange-SSOavailable-72f9529f.png">here</a> to view the diagram at full size or get the PDF <a href="bin/map-16/ExistingmyGov-ConnectedtoExchange-SSOavailable.pdf">here</a></li>
+</ul></li>
+</ul>
+
+<p>The myGov OpenAPI spec which includes the below changes required as part of this feature has been documented <a href="https://digital-services.pages-gitlab.csda.gov.au/architecture/mygov/api-user-account/#mygov-user-account-api">here</a>
+<br>(a) modified <b>/v1/authenticator/verify</b> to return the Customer&#39;s email address or link identifier (MBUN) for the given qualified subject attribute.
+<br>(b) defined a new version (v2) for <b>/accounts/links</b> as part of an orchestration API for creating OR updating the Customer&#39;s myGov profile in myGov along with creation of a new myGov RP Account Link for a given relying party.</p>
+<h2 id='map-20-identity-resolution'>MAP 20 - Identity Resolution</h2>
+<p><a id="MAP20"></a>
+This diagram depicts the relationships present within the Exchange Customer Aggregate Root.</p>
+
+<p>Click <a href="images/ExchangeCustomerAggRoot-6dccfb31.png">here</a> to view the diagram at full size.</p>
+
+<p><img src="images/ExchangeCustomerAggRoot-6dccfb31.png" alt="Exchange Customer Aggregate Root Diagram" /></p>
+
+<ul>
+<li><p>Sequence diagrams:</p>
+
+<ul>
+<li>Scenario 1: (New Customer - New RP - New IDP - New myGov)
+Click <a href="images/map-20/NewCustomer-NewRP-NewIDP-NewmyGov-1361c487.png">here</a> to view the diagram at full size or get the PDF <a href="bin/map-20/NewCustomer-NewRP-NewIDP-NewmyGov.pdf">here</a></li>
+<li>Scenario 2: (Existing Customer - New RP - New IDP - Existing myGov)
+Click <a href="images/map-20/ExistingCustomer-NewRP-NewIDP-ExistingmyGov-4e43e994.png">here</a> to view the diagram at full size or get the PDF <a href="bin/map-20/ExistingCustomer-NewRP-NewIDP-ExistingmyGov.pdf">here</a></li>
+<li>Scenario 3: (Existing Customer - Existing RP - New IDP - Existing myGov)
+Click <a href="images/map-20/ExistingCustomer-ExistingRP-NewIDP-ExistingmyGov-de9b0514.png">here</a> to view the diagram at full size or get the PDF <a href="bin/map-20/ExistingCustomer-ExistingRP-NewIDP-ExistingmyGov.pdf">here</a></li>
+</ul></li>
+</ul>
+<h2 id='map-43-agency-customer-link-api'>MAP 43 - Agency Customer Link API</h2>
+<p><a id="MAP43"></a>
+The JETT train feature 12.4 proposes to move the Confirmation of Identity guided procedure into Process Direct. In addition to this, the myGov Linking Tool will also be moved to Process Direct as Identity and Authentication transactions are seen as the same thing to Service Delivery staff. </p>
+
+<p>MaGIC will enable the myGov linking tool to integrate with Process Direct, however no updates to the functionality of the myGov linking tool itself will be made.</p>
+
+<p>myGov to expose the below 3 API&#39;s to Process Direct, which will be consumed via the SAP PI/PO Integration platform:
+<br>(a) Read Q&amp;A set (retrieve PORO information and Eligibility rating stored against a Customer’s record)
+<br>(b) Calculate Registration Rating
+<br>(c) Generate Activation Code</p>
+
+<p>The Agency Customer Link OpenAPI spec has been documented <a href="https://gitlab.csda.gov.au/digital-services/architecture/portfolio/api-ext-agency-customer-link/blob/master/openapi/openapi.yaml">here</a>.
+<br>The API documentation is located <a href="https://digital-services.pages-gitlab.csda.gov.au/architecture/portfolio/api-ext-agency-customer-link/#agency-customer-link-api">here</a>.</p>
+
+<p>An existing service <a href="http://svn-alm-prod.csda.gov.au/svn/ITSEC/Portfolio/portfolio-enterprise/trunk/portfolio-business-client/src/main/java/au/gov/portfolio/itsecurity/agncycust/application/client/service/ClientAgencyCustomerService.java">ClientAgencyCustomerService.java</a> is available which already includes a large part of the functionality required by the API.  This should be extended to support the API.</p>
+
+<p>A new (skinny) WAR artifact should be added to the portfolio-enterprise EAR project which exposes the agency-customer-link REST API.</p>
+<h2 id='map-54-manage-consent-and-idp-selection'>MAP 54 - Manage Consent and IdP selection</h2>
+<p><a id="MAP54"></a>
+- (+) denotes a new component. 
+- (*) denotes an updated component. </p>
+<h3 id='component-diagram'>Component Diagram</h3>
+<p>Click <a href="images/IdHubComponentsDiagram-e286bdeb.png">here</a> to view the diagram at full size or get the PDF <a href="bin/IdHubComponentsDiagram.pdf">here</a>.</p>
+
+<p><img src="images/IdHubComponentsDiagram-e286bdeb.png" alt="Component Diagram" /></p>
+<h3 id='identity-hub-authorisation-server'>Identity Hub Authorisation Server (*)</h3>
+<p>Individuals will authenticate via the Identity Hub Auth Server in order to access the <a href="#UI_IH_CUSTMGMT_PLATFORM">Identity Hub Customer Platform</a> in order to manage their consent rules amongst other things.</p>
+
+<p>The <a href="#UI_IH_CUSTMGMT_PLATFORM">Identity Hub Customer Platform</a> will be registered as Public OAUTH Client/RP with scopes <code>identityhub_customer_platform_read</code> and <code>identityhub_customer_platform_write</code>.</p>
+
+<p>The Identity Hub Authorisation Servers MUST support the following <a href="#OIDC">OIDC</a> and <a href="#OAUTH2">OAUTH2</a> standards-based functionality:</p>
+
+<ul>
+<li>Public OAUTH Clients
+
+<ul>
+<li>This is required to support the Identity Hub Customer Platform (SPA) as a Public Client.</li>
+</ul></li>
+<li>Proof Key for Code Exchange <a href="#PKCE">PKCE</a>
+
+<ul>
+<li>This is required to support Single Page Applications (SPA) Public Clients.</li>
+</ul></li>
+<li>A well-Known configuration Endpoint /.well-known/openid-configuration (or equivalent URL).</li>
+<li>Public Clients MUST use the Authorisation Code flow in order to receive Access Tokens and ID Tokens.</li>
+<li>Front-Channel Logout described under <a href="#OIDCFC">OIDCFC</a>.</li>
+<li>RP iframe for Session Management as described under <a href="#OIDCSESS">OIDCSESS</a>.</li>
+<li>Access Tokens as JWTs.</li>
+</ul>
+
+<p>Authorisation Servers SHALL NOT support the following functionality:</p>
+
+<ul>
+<li>The Implicit flow MUST NOT be supported.</li>
+<li>Public Clients SHALL NOT receive Refresh Tokens.</li>
+</ul>
+<h3 id='identity-hub-customer-platform'>Identity Hub Customer Platform (+)</h3>
+<p>Identity Hub customers will be able to manage their consent rules and instances via this platform which will hosted on a seperate (sub) domain which customers may find through external means like a Google search.</p>
+
+<p>This component will be developed as an Angular single page application and registerd an OIDC Relying Party on the Identity Hub Authorisation Server.  Please note that the rules that apply to TDIF RPs do not apply to this client although they are both registered as OIDC RPs.</p>
+
+<p>Angular Components will be developed (or existing open source packages leveraged) to provide the following OIDC-related functionality:</p>
+
+<ul>
+<li>Proof Key for Code Exchange <a href="#PKCE">PCKE</a>.</li>
+<li>Front-Channel Logout described under <a href="#OIDCFC">OIDCFC</a>.</li>
+<li>RP iframe for Session Management as described under <a href="#OIDCSESS">OIDCSESS</a>.</li>
+</ul>
+<h3 id='api-gateway'>API Gateway (+)</h3>
+<p>The API Gateway will host and protect external-facing REST APIs available to the Identity Hub Customer Platform.  It must validate and unpack JWT Access Tokens (and relevant scopes) issued by the Identity Hub Authorisation Server and propagate the associated subject identifier to the downstream internal APIs. </p>
+<h3 id='identity-hub-customer-platform-api'>Identity Hub Customer Platform API (+)</h3>
+<p>The API for this feature has been documented <a href="https://digital-services.pages-gitlab.csda.gov.au/architecture/govpass/api-idhub-customer-platform">here</a>.</p>
+<h3 id='domain'>Domain (*)</h3>
+<p>This diagram depicts the relationships present within the Consent Permission Aggregate Root.</p>
+
+<p>Click <a href="images/ExchangeConsentPermissionAggRoot-9d98714a.png">here</a> to view the diagram at full size.</p>
+
+<p><img src="images/ExchangeConsentPermissionAggRoot-9d98714a.png" alt="Exchange Consent Permission Aggregate Root Diagram" /></p>
+<h1 id='pi7-features'>PI7 Features</h1>
+<p>The PI-7 will incorporate the following features:</p>
+
+<table><thead>
+<tr>
+<th>Feature #</th>
+<th>Feature Description</th>
+<th>Design Required</th>
+<th>MDT</th>
+<th>Comments</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-33">MAP-33</a></td>
+<td>On-board Medicare to mobile authentication pattern (MAP)</td>
+<td>No</td>
+<td>Mushrooms</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-72">MAP-72</a></td>
+<td>On-board National Cancer Screening Register to myGov</td>
+<td>No</td>
+<td>Mushrooms</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-178">MAP-178</a></td>
+<td>View my activities on user dashboard</td>
+<td>No</td>
+<td>Mushrooms</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-47">MAP-47</a></td>
+<td>Remove redundant logging to free up server space</td>
+<td>No</td>
+<td>Magical Staff</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-195">MAP-195</a></td>
+<td>Turn-Off Manage ABN Connections (MAC) from myGov</td>
+<td>No</td>
+<td>Magical Staff</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-203">MAP-203</a></td>
+<td>Move GSE and ITS into GITLAB</td>
+<td>No</td>
+<td>Magical Staff</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-180">MAP-180</a></td>
+<td>Display document information requested by the Relying Party</td>
+<td>No</td>
+<td>Dragons</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-181">MAP-181</a></td>
+<td>Enhancements to myGov beta sign-in page</td>
+<td>No</td>
+<td>Dragons</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-182">MAP-182</a></td>
+<td>myGov account management for an account that only has digital identity credentials</td>
+<td>No</td>
+<td>Magical Staff</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-204">MAP-204</a></td>
+<td>Disposal of expired member service messages in myGov inbox data store</td>
+<td><a href="#MAP204">Yes</a></td>
+<td>Magical Staff</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-55">MAP-55</a></td>
+<td>Manage IdPs enrolled in private beta from IdPs enrolled in public beta</td>
+<td><a href="#MAP55">Yes</a></td>
+<td>Mushrooms</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-210">MAP-210</a></td>
+<td>Expose myGov Inbox API to support the digital experience platform dashboard</td>
+<td><a href="#MAP210">Yes</a></td>
+<td>Magical Staff</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-211">MAP-211</a></td>
+<td>Expose myGov Tell us Once API to support the digital experience platform dashboard</td>
+<td><a href="#MAP211">Yes</a></td>
+<td>Magical Staff</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-198">MAP-198</a></td>
+<td>Enhancements to myGov Integration architecture design</td>
+<td><a href="#MAP198">Yes</a></td>
+<td>Dragons</td>
+<td>NONE</td>
+</tr>
+</tbody></table>
+<h2 id='map-204-disposal-of-expired-member-service-messages-in-mygov-inbox-data-store'>MAP 204 - Disposal of expired member service messages in myGov inbox data store</h2>
+<p><a id="MAP204"></a>
+With the number of member services onboarding to Inbox function increases from time to time, the number of inbox messages in myGov Database grows rapidly. It is noted that a very large number of the inbox messages in the myGov data store are &#39;Expired&#39;, which has implications on storage and stability issues resulting in poor performance in myGov.</p>
+
+<ul>
+<li><p>Proposed solution:</p>
+
+<ul>
+<li>Remove/Delete all expired metadata from the myGov Inbox DB table <strong>MGV_COMM</strong>. However prior to deletion, check for any dependencies on this table: if they do exist, the cascade delete option should be considered after exhaustive review &amp; impact analysis.</li>
+<li>As part of the MVP, manually execute the SQL DELETE command to remove expired metadata from this table (and dependent tables if any).</li>
+<li>It is recommended to delete the expired data in small SQL batches rather than a one-off DELETE, to ensure there is no adverse impact on the DB.</li>
+<li>Post MVP, need to work towards defining and implementing a daily batch job to automate this process.</li>
+</ul></li>
+</ul>
+
+<p>Relevant Member services must be informed that the expired metadata, once deleted from the myGov DB, can be no longer recovered.</p>
+<h2 id='map-55-manage-idps-enrolled-in-private-beta-from-idps-enrolled-in-public-beta'>MAP 55 - Manage IdPs enrolled in private beta from IdPs enrolled in public beta</h2>
+<p><a id="MAP55"></a>
+The functionality required for this feature will enable the Exchange to determine the type of enrolment a Relying Party or Identity Provider is provisioned in the Exchange (i.e. private or public enrolment). As a result, the Exchange shall prompt users the list of accredited Identity Providers supported in that enrolment.
+For example if a user is participating in a public beta for a Relying Party, the Exchange would only want to display Identity Providers that are also in Public beta or that are Live.</p>
+
+<ul>
+<li><p>Proposed solution:</p>
+
+<ul>
+<li>Extend the configuration of Relying Party registration details in the Exchange so that it includes an enrolment phase. This includes &#39;Private beta&#39;, &#39;Public beta&#39; and &#39;Live&#39; phases.</li>
+<li>Extend the configuration of Identity Provider registration details in the Exchange so that it includes an enrolment phase. This includes &#39;Private beta&#39; and &#39;Public beta&#39; phases.</li>
+<li>Update registered RP and IdP details in all environments from Dev to Production to include the enrolment phase.</li>
+<li>Evaluate and display accredited Identity Providers that support an authentication request from a public beta RP.</li>
+<li>Evaluate and display accredited Identity Providers that support an authentication request from a private beta RP.</li>
+</ul></li>
+</ul>
+
+<p>The connected Relying Parties, Identity Providers and Attribute Providers should be classified as follows:</p>
+
+<table><thead>
+<tr>
+<th>Relying Party details</th>
+<th>Classification</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ATO Online (TFN)</td>
+<td>private​</td>
+</tr>
+<tr>
+<td>ATO RAM</td>
+<td>private</td>
+</tr>
+<tr>
+<td>DSS Grants</td>
+<td>private</td>
+</tr>
+<tr>
+<td>​USI</td>
+<td>public</td>
+</tr>
+<tr>
+<td>​myGov</td>
+<td>private</td>
+</tr>
+<tr>
+<td>​Centrelink</td>
+<td>private</td>
+</tr>
+<tr>
+<td>DHS PRODA</td>
+<td>public​</td>
+</tr>
+<tr>
+<td><strong>Identity Provider details</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>​myGovID</td>
+<td>public</td>
+</tr>
+<tr>
+<td>​DigitalID</td>
+<td>private</td>
+</tr>
+<tr>
+<td>​myGov</td>
+<td>??</td>
+</tr>
+<tr>
+<td><strong>Attribute Provider details</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>​RAM</td>
+<td>private</td>
+</tr>
+</tbody></table>
+<h2 id='map-210-expose-mygov-inbox-api-to-support-the-digital-experience-platform-dashboard'>MAP 210 - Expose myGov Inbox API to support the digital experience platform dashboard</h2>
+<p><a id="MAP210"></a>
+Currently, Services Australia is in the process of developing a digital experience platform (DxP) that will deliver a proof of concept for a beta at some stage in 2020.</p>
+
+<p>The DxP will utilise some of myGov capabilities and will require MaGIC to develop APIs for the Inbox so that the technical enabling team for the DxP can consume them and commence testing for their beta.</p>
+
+<p>The External myGov Digital Mail OpenAPI spec is located <a href="https://gitlab.csda.gov.au/digital-services/architecture/mygov/api-ext-mygov-digitalmail/blob/master/openapi/openapi.yaml">here</a>.
+<br>The API documentation is located <a href="https://digital-services.pages-gitlab.csda.gov.au/architecture/mygov/api-ext-mygov-digitalmail/#external-mygov-digital-mail-api">here</a>.</p>
+<h2 id='map-211-expose-mygov-tell-us-once-api-to-support-the-digital-experience-platform-dashboard'>MAP 211 - Expose myGov Tell us Once API to support the digital experience platform dashboard</h2>
+<p><a id="MAP211"></a>
+Currently, Services Australia is in the process of developing a digital experience platform (DxP) that will deliver a proof of concept for a beta at some stage in 2020.</p>
+
+<p>The DxP will utilise some of myGov capabilities and will require MaGIC to develop APIs for the Tell Us Once functionality so that the technical enabling team for the DxP can consume them and commence testing for their beta.</p>
+
+<p>The External myGov Tell Us Once OpenAPI spec is located <a href="https://gitlab.csda.gov.au/digital-services/architecture/mygov/api-ext-mygov-tuo/blob/master/openapi/openapi.yaml">here</a>.
+<br>The API documentation is located <a href="https://digital-services.pages-gitlab.csda.gov.au/architecture/mygov/api-ext-mygov-tuo/#external-mygov-tell-us-once-api">here</a>.</p>
+<h2 id='map-198-enhancements-to-mygov-integration-architecture-design'>MAP 198 - Enhancements to myGov Integration architecture design</h2>
+<p><a id="MAP198"></a>
+The current design for myGov integration does not adequately account for de-duplication and utilises the myGov MBUN as that user’s pairwise identifier for linking the relying party with the exchange. This also does not account for situations where an account is already made and a link is subsequently established.</p>
+
+<ul>
+<li><p>Proposed solution:</p>
+
+<ul>
+<li><strong>mygov_link_id</strong> - The mygov_linked claim should be replaced with a &#39;mygov_link_id&#39; claim, which will return the mygov_link_id for that user’s link between myGov and the relying party requesting the authentication. It can be requested as part of the &quot;claims&quot; request parameter in the Authorization Request. This claim should not initiate any user flows at the Exchange.</li>
+<li><strong>mygov_link</strong> - Introduce an additional value called &#39;mygov_link&#39; for the User flow URL parameter, which may be requested by a Relying Party when it expects the user to undergo myGov integration. This value need not be passed to the IdP. A Relying Party may request multiple values for this URL Parameter. The &#39;user_flow&#39; request parameter will hold values that indicate the desired user flow for the user at the Identity Provider and/or the Exchange. Defined values are: <em>sign_in, sign_up, mygov_link</em>.</li>
+</ul></li>
+</ul>
+<h1 id='pi8-features'>PI8 Features</h1>
+<p>The PI-8 will incorporate the following features:</p>
+
+<table><thead>
+<tr>
+<th>Feature #</th>
+<th>Feature Description</th>
+<th>Design Required</th>
+<th>MDT</th>
+<th>Comments</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-50">MAP-50</a></td>
+<td>Removal of the &#39;connectedID&#39; code from myGov</td>
+<td>No</td>
+<td>Magical Staff</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-193">MAP-193</a></td>
+<td>Restrict the ability to request verified documents to specific document types</td>
+<td>No</td>
+<td>Dragons</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-199">MAP-199</a></td>
+<td>Educational information for identity.gov.au</td>
+<td>No</td>
+<td>Mushrooms</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-202">MAP-202</a></td>
+<td>User Dashboard authenticated landing page</td>
+<td>No</td>
+<td>Mushrooms</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-218">MAP-218</a></td>
+<td>On-board the DTA mock Relying Party to onboarding environment</td>
+<td>No</td>
+<td>Mushrooms</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-222">MAP-222</a></td>
+<td>On-board the NDIS app to myGov MAP and enable tell us once capabilities</td>
+<td>No</td>
+<td>Mushrooms</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-220">MAP-220</a></td>
+<td>Updated Error message for de-duplication</td>
+<td>No</td>
+<td>Dragons</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-166">MAP-166</a></td>
+<td>Ability for a user to unlink a digital identity from their myGov account</td>
+<td>No</td>
+<td>Magical Staff</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-221">MAP-221</a></td>
+<td>Update URLs on myGov/Identity Hub that redirect from Human Services to Services Australia</td>
+<td>No</td>
+<td>Magical Staff and Mushrooms</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-42">MAP-42</a></td>
+<td>Connect digital identity to myGov via an authenticated member service session</td>
+<td><a href="#MAP42">Yes</a></td>
+<td>Dragons</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-155">MAP-155</a></td>
+<td>Broadcast capability for myGov unauthenticated pages</td>
+<td><a href="#MAP155">Yes</a></td>
+<td>Magical Staff</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-184">MAP-184</a></td>
+<td>Enhance mobile authentication pattern to accept digital identity</td>
+<td><a href="#MAP184">Yes</a></td>
+<td>Magical Staff</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-185">MAP-185</a></td>
+<td>Enhance web authentication pattern to accept digital identity</td>
+<td><a href="#MAP185">Yes</a></td>
+<td>Magical Staff</td>
+<td>NONE</td>
+</tr>
+<tr>
+<td><a href="http://jira-prod.csda.gov.au/browse/MAP-223">MAP-223</a></td>
+<td>Archiving inactive myGov accounts</td>
+<td><a href="#MAP223">Yes</a></td>
+<td>Magical Staff</td>
+<td>NONE</td>
+</tr>
+</tbody></table>
+<h2 id='map-42-connect-digital-identity-to-mygov-via-an-authenticated-member-service-session'>MAP 42 - Connect digital identity to myGov via an authenticated member service session</h2>
+<p><a id="MAP42"></a>
+A link to the design paper needs to be pasted here once reviewed and approved by GPAG</p>
+<h2 id='map-155-broadcast-capability-for-mygov-unauthenticated-pages'>MAP 155 - Broadcast capability for myGov unauthenticated pages</h2>
+<p><a id="MAP155"></a>
+This feature is to implement a broadcast capability for the myGov unauthenticated sign in page.
+Users would be informed of any outages to member services or upcoming changes without the requirement to sign in to myGov to receive that information.</p>
+
+<p>Support staff members in the Channel Operations Facility (COF) create/submit these incident messages via the GovCMS Portal to be published on the myGov website. This is an existing process and will remain unchanged.</p>
+
+<p>The current design proposal is that the myGov Landing JSP Page in the Unauthenticated space should directly initiate an API call (via the User Agent/Browser) to the &#39;Alert:List:Active&#39; resource API, exposed by the GovCMS system (that sits behind an Akamai CDN cache) to retrieve a list of all active alerts that must be published on the myGov website. </p>
+
+<p>Click <a href="images/myGov frontend - GovCMS integration-9500bf74.png">here</a> to view the component diagram at full size.</p>
+
+<p>Reference to the API specification is <a href="https://content-dhs.govcms.gov.au/docs#operation/alert.list.active">here</a>.</p>
+<h2 id='map-184-enhance-mobile-authentication-pattern-to-accept-digital-identity'>MAP 184 - Enhance mobile authentication pattern to accept digital identity</h2>
+<p><a id="MAP184"></a>
+Embed a link to the design paper once reviewed and approved by GPAG</p>
+<h2 id='map-185-enhance-web-authentication-pattern-to-accept-digital-identity'>MAP 185 - Enhance web authentication pattern to accept digital identity</h2>
+<p><a id="MAP185"></a>
+Embed a link to the design paper once reviewed and approved by GPAG</p>
+<h2 id='map-223-archiving-inactive-mygov-accounts'>MAP 223 - Archiving inactive myGov accounts</h2>
+<p><a id="MAP223"></a>
+The detailed design strategy for archiving inactive myGov accounts must be documented here.</p>
+<h1 id='references'>References</h1>
+<table><thead>
+<tr>
+<th><strong>Reference</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a id="JWK"></a><strong>[JWK]</strong></td>
+<td>JSON Web Key (JWK): <a href="https://tools.ietf.org/html/rfc7517">https://tools.ietf.org/html/rfc7517</a></td>
+</tr>
+<tr>
+<td><a id="JWT"></a><strong>[JWT]</strong></td>
+<td>JSON Web Token (JWT): <a href="https://tools.ietf.org/html/draft-ietf-oauth-json-web-token-32">https://tools.ietf.org/html/draft-ietf-oauth-json-web-token-32</a></td>
+</tr>
+<tr>
+<td><a id="OAUTH2"></a><strong>[OAUTH2]</strong></td>
+<td>The OAuth 2.0 Authorization Framework: <a href="https://tools.ietf.org/html/rfc6749">https://tools.ietf.org/html/rfc6749</a></td>
+</tr>
+<tr>
+<td><a id="OIDC"></a><strong>[OIDC]</strong></td>
+<td>OpenID Connect Core 1.0 incorporating errata set 1: <a href="http://openid.net/specs/openid-connect-core-1_0.html">http://openid.net/specs/openid-connect-core-1_0.html</a></td>
+</tr>
+<tr>
+<td><a id="OAUTHBBAPPS"></a><strong>[OAUTHBBAPPS]</strong></td>
+<td>OAuth 2.0 for Browser-Based Apps <a href="https://tools.ietf.org/id/draft-parecki-oauth-browser-based-apps-02.txt">https://tools.ietf.org/id/draft-parecki-oauth-browser-based-apps-02.txt</a></td>
+</tr>
+<tr>
+<td><a id="OIDCFC"></a><strong>[OIDCFC]</strong></td>
+<td>OpenID Connect Front-Channel Logout 1.0 <a href="https://openid.net/specs/openid-connect-frontchannel-1_0.html">https://openid.net/specs/openid-connect-frontchannel-1_0.html</a></td>
+</tr>
+<tr>
+<td><a id="OIDCSESS"><a/><strong>[OIDCSESS]</strong></td>
+<td>OpenID Connect Session Management 1.0 <a href="https://openid.net/specs/openid-connect-session-1_0.html">https://openid.net/specs/openid-connect-session-1_0.html</a></td>
+</tr>
+<tr>
+<td><a id="PKCE"></a><strong>[PKCE]</strong></td>
+<td>Proof Key for Code Exchange by OAuth Public Clients: <a href="https://tools.ietf.org/html/rfc7636">https://tools.ietf.org/html/rfc7636</a></td>
 </tr>
 </tbody></table>
 
       </div>
       <div class="dark-box">
-          <div class="lang-selector">
-                <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="ruby">ruby</a>
-                <a href="#" data-language-name="python">python</a>
-                <a href="#" data-language-name="javascript">javascript</a>
-          </div>
       </div>
     </div>
   </body>
