@@ -7,6 +7,10 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - python
   - javascript
 
+includes:
+  - identity_host
+
+
 search: true
 ---
 
