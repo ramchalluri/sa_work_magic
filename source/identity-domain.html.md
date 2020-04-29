@@ -14,10 +14,10 @@ DTA and Train has decided to use *identity.gov.au* domain instead of *identityhu
 
 This paper is to document the tasks involved to migrate the domain name and setup required mappings for various apps. At this time the plan is to use the domain name for the following 
 
-* [Customer Dashboard](#CUSTOMER_DASHBOARD)
-    1. [Staff support tool](#STAFF_SUPPORT_TOOL)
-    1. [Identity Hub](#IDENTITY_HUB_MIGRATION)
-* [DTA Identity Website redirection](#DTA_WEB_REDIRECT) (Not sure if needed)  
+1.  [Customer Dashboard](#CUSTOMER_DASHBOARD)
+1.  [Staff support tool](#STAFF_SUPPORT_TOOL)
+1.  [Identity Hub](#IDENTITY_HUB_MIGRATION)
+1.  [DTA Identity Website redirection](#DTA_WEB_REDIRECT) (Not sure if needed)  
 
 ## <a id="CUSTOMER_DASHBOARD"></a>Customer Dashboard 
 
