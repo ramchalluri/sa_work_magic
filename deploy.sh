@@ -7,7 +7,6 @@ Usage: $me [-c FILE] [<options>]
 Deploy generated files to a git branch.
 
 Options:
-
   -h, --help               Show this help information.
   -v, --verbose            Increase verbosity. Useful for debugging.
   -e, --allow-empty        Allow deployment of an empty directory.
