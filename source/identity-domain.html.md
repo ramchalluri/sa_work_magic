@@ -19,9 +19,49 @@ This paper is to document the tasks involved to migrate the domain name and setu
 1.  [Identity Hub](#IDENTITY_HUB_MIGRATION)
 1.  [DTA Identity Website redirection](#DTA_WEB_REDIRECT) (Not sure if needed)  
 
-## <a id="CUSTOMER_DASHBOARD"></a>Customer Dashboard2 
+## <a id="CUSTOMER_DASHBOARD"></a>Customer Dashboard
+
+
+<div hidden>
+
+```
+@startuml firstDiagram
+
+actor Foo1
+boundary Foo2
+control Foo3
+entity Foo4
+database Foo5
+collections Foo6
+Foo1 -> Foo2 : To boundary
+Foo1 -> Foo3 : To control2
+Foo1 -> Foo4 : To entity
+Foo1 -> Foo5 : To database
+Foo1 -> Foo6 : To collections		
+@enduml
+```
+![](bin\firstDiagram.svg)
+
+</div>
 
 ## <a id="STAFF_SUPPORT_TOOL"></a>Staff Support Tool
+
+<div hidden>
+
+```
+@startuml firstDiagram2
+
+Alice -> Bob: Hello
+Bob -> Alice: Hi!
+		
+@enduml
+
+```
+
+![](bin\firstDiagram2.svg)
+
+</div>
+
 
 ## <a id="IDENTITY_HUB_MIGRATION"></a>Identity Hub migration 
 
