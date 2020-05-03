@@ -11,6 +11,10 @@ bundle exec middleman build --clean
 java -jar path_to_plantuml.jar FILENAME
 ```` 
 
+https://graphviz.gitlab.io/_pages/Download/Download_windows.html
+
+http://plantuml.com/guide
+
 ## Prerequisites 
 
 ## Ruby
