@@ -20,7 +20,11 @@ This paper is to document the tasks involved to migrate the domain name and setu
 1.  [DTA Identity Website redirection](#DTA_WEB_REDIRECT) (Not sure if needed)  
 
 ## <a id="CUSTOMER_DASHBOARD"></a>Customer Dashboard
-Customer Dashboard will host a website for customer to view and maintain identity exchange functions. The functions are listed below 
+Customer Dashboard is a place that a user can go to view activities associated with the use of their Digital Identity in relation to interactions within the Identity Hub. A version Customer dashboard is already developed and hosted on a internal only server. This feature is to provide external facing capability on "identity.gov.au" domain name. 
+
+The following domains are needed to support externalizing this website. 
+
+
 
 ## <a id="STAFF_SUPPORT_TOOL"></a>Staff Support Tool
 ## <a id="IDENTITY_HUB_MIGRATION"></a>Identity Hub migration 
