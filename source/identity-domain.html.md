@@ -12,7 +12,7 @@ search: true
 # MaGIC Train PI Design - Identity Domain name change
 DTA and Train has decided to use *identity.gov.au* domain instead of *identityhub.my.gov.au*. Currently *identity.gov.au* domain is owned and managed by DTA. Services Australia has put in a request to CEO to transfer the domain to Services Australia and on **2020-04-01** that request has been accepted. 
 
-This paper is to document the tasks involved to migrate the domain name and setup required mappings for various apps. At this time the plan is to use the domain name for the following 
+This paper is to document the tasks involved to migrate the domain name and set-up required mappings for various apps. At this time the plan is to use the domain name for the following 
 
 1.  [Customer Dashboard](#CUSTOMER_DASHBOARD)
 1.  [Staff support tool](#STAFF_SUPPORT_TOOL)
@@ -44,8 +44,10 @@ The following domains are needed to support externalizing this website.
 |11.  | PROD     | <https://identity.gov.au>       | External   | Design |
 
 ## <a id="STAFF_SUPPORT_TOOL"></a>Staff Support Tool
-
-The following domains are needed to support externalizing the  website. 
+The following domains are needed to support externalizing the staff support tool website. The Staff Support tool is going to provide the following functions 
+1. View Exchange Transactions 
+1. View Relying Parties and Identity Provider Registrations 
+1. Create / Update Relying Parties and Identity Provider registrations
 
 |S.No | Env Name |   URL                                   | Visibility | Status |
 |:---:|:--------:|-----------------------------------------|------------|:------:|
@@ -67,4 +69,11 @@ The following domains are needed to support externalizing the  website.
 |11.  | PROD     | <https://support.identity.gov.au>       | Internal   | Design |
 
 ## <a id="IDENTITY_HUB_MIGRATION"></a>Identity Hub migration
+Currently Identity Exchange HUB is hosted on "identityhub.my.gov.au" domain and it need to be migrated to identity.gov.au domain in the future. If and when this becomes a reality the following domains need to be migrated to the new domain. 
+
+1. identityhub.my.gov.au --> identity.gov.au
+1. api.identityhub.my.gov.au --> api.identity.gov.au
+1. auth.identityhub.my.gov.au --> auth.identity.gov.au
+
 ## <a id="DTA_WEB_REDIRECT"></a>DTA Identity redirection 
+Currently "identity.gov.au" is redirecting to DTA website serving generic identity details. We need to keep doing this till we have that content migrated to Services Australia and added to the identity.gov.au website.  
